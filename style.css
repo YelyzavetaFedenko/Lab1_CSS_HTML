@@ -7,6 +7,103 @@
     padding - inner offset
 */
 
+/* MEDIA QUERIES */
+
+/* Mobile */
+@media screen and (max-width: 900px) {
+    html, body {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .header-container {
+        display: flex;
+        width: 100% !important;
+        margin: 0 !important;
+        justify-content: space-evenly;
+    }
+
+    .header-brand {
+        width: 80% !important;
+    }
+
+    .header-logo {
+        font-size: 24px !important;
+    }
+
+    .header-links-list {
+        display: none !important;
+    }
+
+    #dropdown-button {
+        align-self: stretch;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: white;
+        font-size: 44px;
+        width: 78%;
+        font-family: Verdana;
+        font-weight: 500;
+    }
+
+    #dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    #dropdown-content a:active {
+        background-color: #ddd;
+    }
+
+    #dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .card-container {
+        width: 90% !important;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    #dropdown-button, #dropdown-content {
+        display: none !important;
+    }
+
+    .header-logo {
+        font-size: 22px !important;
+    }
+
+    .header-links {
+        width: 55% !important;
+    }
+
+    #dropdown-button, #dropdown-content {
+        display: none !important;
+    }
+
+    .card-container {
+        width: 42% !important;
+    }
+}
+
+/* Screen */
+@media screen and (min-width: 1201px) {
+    #dropdown-button, #dropdown-content {
+        display: none !important;
+    }
+}
+
+
 /* GENERAL */
 
 html, body {
